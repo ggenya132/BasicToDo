@@ -1,0 +1,19 @@
+{
+  "name": "password-gen",
+  "version": "1.0.0",
+  "description": "a quick react website generating user passwords ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "run": "nodemon index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eugene Vedensky",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5",
+    "password-generator": "^2.2.0"
+  }
+}
