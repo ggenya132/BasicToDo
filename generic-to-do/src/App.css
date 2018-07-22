@@ -1,0 +1,96 @@
+.header {
+  font-family: "Pacifico", cursive;
+  font-size: 10em;
+  text-align: center;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 8px #2c3e50;
+}
+
+input:first-of-type {
+  border: 2px solid #f1c40f;
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin: 10px auto;
+  transition: all 0.5s ease-in;
+}
+input:first-of-type:focus {
+  transform: scale(1.2);
+}
+input:nth-of-type(2) {
+  border: 2px solid #f1c40f;
+  border-radius: 5px;
+  background: transparent;
+  padding: 5px 80px;
+  transition: all 0.5s ease-out;
+}
+input:nth-of-type(2):hover {
+  background-color: #f1c40f;
+  color: #ecf0f1;
+}
+.app-container {
+  background-color: #3498db;
+  text-align: center;
+}
+.error {
+  color: #2c3e50;
+  font-size: 2em;
+  animation: fade-in 0.5s ease-in;
+}
+
+.to-do__default {
+  position: relative;
+  padding: 5px 80px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  width: 33%;
+  margin: 20px auto;
+}
+
+.remove-todo {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  transition: all 0.5s;
+}
+.remove-todo:hover {
+  transform: scale(1.5) rotate(180deg);
+  color: #f1c40f;
+}
+.to-do__content {
+  display: inline-block;
+}
+
+.example-enter {
+  opacity: 0.01;
+  width: 0px;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  width: 33%;
+  transition: 700ms;
+}
+
+.example-leave {
+  opacity: 1;
+  width: 33%;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  width: 0px;
+  transition: 700ms;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
